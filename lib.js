@@ -103,6 +103,14 @@ function rollDice ()
 }
 
 
+function rollMonsterDice ()
+{
+  if (luckEvent) { return false; }
+  var dice = [getDice(), getDice()];
+  showMonsterDice(dice);
+}
+
+
 function showDice (dice)
 {
   var html = '';

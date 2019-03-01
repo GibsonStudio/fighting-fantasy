@@ -22,7 +22,7 @@
     <div id="luck" class="stat" onclick="statClicked(event, 'luck')"></div>
 
     <div id="dice-your" onclick="rollDice();"></div>
-    <div id="dice-monster"></div>
+    <div id="dice-monster" onClick="rollMonsterDice();"></div>
 
     <div id="bu-test-luck" onclick="testLuck();"></div>
     <div id="luck-output"></div>
@@ -31,7 +31,7 @@
     <div id="fight-bg">
       <div id="monster-skill" class="monster-stat" onclick="monsterStatClicked(event, 'skill')"></div>
       <div id="monster-stamina" class="monster-stat" onclick="monsterStatClicked(event, 'stamina')"></div>
-      <div id="monster-portrait" onClick="shuffleMonsterPortrait()"></div>    
+      <div id="monster-portrait" onClick="shuffleMonsterPortrait()"></div>
       <div id="bu-fight-turn" onClick="fightTurn()"></div>
       <div id="fight-message" class="red"></div>
     </div>

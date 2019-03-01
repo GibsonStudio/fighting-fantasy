@@ -11,7 +11,7 @@ body { margin:0px; padding:0px; background-color:#c8cad7; }
 }
 
 #my-container {
-  position:relative; width:700px; height:900px;
+  position:relative; width:700px; height:900px; margin:auto;
   background-image:url('img/bg.png');
 }
 
