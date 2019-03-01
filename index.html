@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+  <link href="style.css" type="text/css" rel="stylesheet">
+  <script src="jquery-1.11.2.min.js" type="text/javascript"></script>
+  <script src="lib.js" type="text/javascript"></script>
+</head>
+
+<body onload="init()" class="noselect">
+
+  <div id="my-container">
+    <div id="bu-start" onclick="startNewGame();"></div>
+
+    <div id="you-are-dead">
+      <div id="you-are-dead-message"></div>
+    </div>
+
+    <div id="skill" class="stat" onclick="statClicked(event, 'skill')"></div>
+    <div id="stamina" class="stat" onclick="statClicked(event, 'stamina')"></div>
+    <div id="luck" class="stat" onclick="statClicked(event, 'luck')"></div>
+
+    <div id="dice-your" onclick="rollDice();"></div>
+    <div id="dice-monster"></div>
+
+    <div id="bu-test-luck" onclick="testLuck();"></div>
+    <div id="luck-output"></div>
+
+    <div id="bu-fight-monster" onclick="fightMonster();"></div>
+    <div id="fight-bg">
+      <div id="monster-skill" class="monster-stat" onclick="monsterStatClicked(event, 'skill')"></div>
+      <div id="monster-stamina" class="monster-stat" onclick="monsterStatClicked(event, 'stamina')"></div>
+      <div id="monster-portrait" onClick="shuffleMonsterPortrait()"></div>    
+      <div id="bu-fight-turn" onClick="fightTurn()"></div>
+      <div id="fight-message" class="red"></div>
+    </div>
+
+    <div id="hero-scratches"></div>
+    <div id="monster-scratches"></div>
+
+  </div>
+
+</body>
+
+</html>
